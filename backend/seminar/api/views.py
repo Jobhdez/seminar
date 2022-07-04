@@ -10,7 +10,7 @@ def list_papers(request):
     Lists all research papers.
 
     @param request: A HTTP request
-    @return: JSON containing research paper data
+    @return: JSON response containing research paper data
     """
     if request.method == 'GET':
         papers = Paper.objects.all()
