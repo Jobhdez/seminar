@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from arxiv.models import Paper
+from arxiv.models import LinearAlgebra
 
 class PaperSerializer(serializers.ModelSerializer):
     class Meta:
@@ -12,3 +13,8 @@ class PaperSerializer(serializers.ModelSerializer):
                   'subject',
                   'updated',
                   'pdf_url']
+        
+class LinearAlgebraSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LinearAlgebra
+        fields = ['expression']
