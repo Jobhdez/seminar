@@ -18,3 +18,8 @@ class Paper(models.Model):
 
     def __str__(self):
         return self.title
+
+class LinearAlgebra(models.Model):
+    """Model of the linear algebra expression."""
+    
+    expression = models.TextField()
