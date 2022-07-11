@@ -7,7 +7,7 @@ from operator import (
 
 def evaluate(exp):
     """
-    Evaluate a Linea Algebra expression.
+    Evaluate a Linear Algebra expression.
     """
     if isinstance(exp, tuple):
         if len(exp) == 3:
